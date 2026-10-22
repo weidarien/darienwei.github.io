@@ -1,89 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Darien Wei — researcher and scientist." />
-    <title>Darien Wei — Researcher & Scientist from McGill university</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-noise" aria-hidden="true"></div>
-    <div class="reading-progress" aria-hidden="true"><span></span></div>
-
-    <header class="site-header shell">
-      <a class="wordmark" href="#top" aria-label="Darien Wei home"><span class="monogram">DW</span><span>Darien Wei</span></a>
-      <p class="header-discipline">Researcher &amp; Scientist</p>
-      <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
-      <nav class="nav" aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#notes">Notes</a><a href="#contact">Contact</a></nav>
-    </header>
-
-    <main id="top">
-      <section class="hero shell" aria-labelledby="hero-title">
-        <div class="hero-top reveal"><p>Research associate, prospective graduate student</p><p>Field notes / 01—26</p></div>
-        <div class="hero-content">
-          <h1 id="hero-title" class="reveal">Looking closely<br />at <em>what shapes</em><br />our world.</h1>
-          <div class="hero-intro reveal"><span class="eyebrow">Research statement</span><p>I investigate the systems, signals, and small observations that help us understand complex questions with greater care.</p><a href="#research" class="arrow-link">Explore my research <span>↓</span></a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f1e9" />
+  <meta name="description" content="Darien Wei's research atlas. Explore research, publications, AI tools and skills, tutoring and notes, research techniques, and contact through a collection of interactive organ illustrations." />
+  <title>Darien Wei — An Atlas of Curiosity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#field-index">Skip to research sections</a>
+  <header class="site-header shell">
+    <a class="brand" href="#atlas" aria-label="Darien Wei — return to the organ collection"><span class="brand-symbol" aria-hidden="true">dw.</span><span>Darien Wei<small>RESEARCHER &amp; SCIENTIST</small></span></a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#atlas" class="atlas-nav">The atlas</a>
+      <a href="#research" data-section="research">Research</a>
+      <a href="#publications" data-section="publications">Publications</a>
+      <a href="#ai-tools" data-section="ai-tools">AI Tools &amp; Skills</a>
+      <a href="#tutoring-notes" data-section="tutoring-notes">Tutoring &amp; Notes</a>
+      <a href="#research-techniques" data-section="research-techniques">Research Techniques</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="atlas" class="atlas shell" aria-labelledby="atlas-heading">
+      <div class="atlas-intro">
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> SIX WAYS INTO MY WORK</p>
+        <h1 id="atlas-heading">A world of <em>curiosity.</em></h1>
+        <p class="intro-copy">I'm Darien Wei. This is a space for my research, the tools I use,<br class="desktop-break" /> and the things I learn along the way.</p>
+      </div>
+      <figure class="anatomy-plate" aria-labelledby="explore-heading" aria-describedby="figure-caption">
+        <div class="plate-heading"><span>THE PERSONAL RESEARCH ATLAS</span><span>PLATE 01 / DARIEN WEI</span></div>
+        <div class="explore-heading">
+          <h2 id="explore-heading">Click an organ to explore</h2>
+          <p>Six connected parts of my work. Choose where to begin.</p>
+          <span class="explore-down" aria-hidden="true">↓</span>
         </div>
-        <figure class="observation reveal" aria-label="Abstract visualization of a research data signal">
-          <div class="observation-label"><span>Fig. 01</span><span>Observed signal</span></div>
-          <svg viewBox="0 0 620 164" role="img" aria-label="A fluctuating line graph">
-            <path class="grid-line" d="M0 35H620M0 82H620M0 129H620" />
-            <path class="signal-shadow" d="M0 116 C30 117,47 89,72 98 S113 141,138 109 S179 45,204 65 S246 128,270 105 S310 78,336 87 S371 124,401 89 S449 37,479 74 S524 120,550 99 S591 35,620 52" />
-            <path class="signal" d="M0 116 C30 117,47 89,72 98 S113 141,138 109 S179 45,204 65 S246 128,270 105 S310 78,336 87 S371 124,401 89 S449 37,479 74 S524 120,550 99 S591 35,620 52" />
-            <circle cx="401" cy="89" r="5" />
+        <div class="anatomy-stage">
+          <div class="anatomy-art">
+            <img class="human-illustration" src="assets/anatomy-engraved-v2.png" alt="An ink-drawn human figure with a pale silhouette and detailed coloured brain, lungs, heart, liver, and digestive organs." width="1024" height="1536" fetchpriority="high" draggable="false" />
+            <!-- Hotspots use percentages of the illustration, so they stay aligned at every size. -->
+            <nav class="organ-hotspots" aria-label="Clickable organs">
+              <a class="organ-hotspot hotspot-brain" href="#research-techniques" data-section="research-techniques" aria-label="Brain — Research Techniques"><span>05</span></a>
+              <a class="organ-hotspot hotspot-eye" href="#ai-tools" data-section="ai-tools" aria-label="Eye — AI Tools &amp; Skills"><span>03</span></a>
+              <a class="organ-hotspot hotspot-ear" href="#contact" data-section="contact" aria-label="Ear — Contact"><span>06</span></a>
+              <a class="organ-hotspot hotspot-lungs" href="#tutoring-notes" data-section="tutoring-notes" aria-label="Lungs — Tutoring &amp; Notes"><span>04</span></a>
+              <a class="organ-hotspot hotspot-lungs-right" href="#tutoring-notes" data-section="tutoring-notes" aria-label="Other lung — Tutoring &amp; Notes"><span>04</span></a>
+              <a class="organ-hotspot hotspot-heart" href="#publications" data-section="publications" aria-label="Heart — Publications"><span>02</span></a>
+              <a class="organ-hotspot hotspot-liver" href="#research" data-section="research" aria-label="Liver — Research"><span>01</span></a>
+            </nav>
+          </div>
+          <svg class="anatomy-leaders" viewBox="0 0 1100 900" aria-hidden="true">
+            <g data-section="research-techniques"><path d="M270 102H370L510 44H550"/><circle cx="550" cy="44" r="4"/></g>
+            <g data-section="ai-tools"><path d="M830 120H705L645 73H533"/><circle cx="533" cy="73" r="4"/></g>
+            <g data-section="contact"><path d="M830 255H755L640 85H590"/><circle cx="590" cy="85" r="4"/></g>
+            <g data-section="tutoring-notes"><path d="M270 290H370L470 232H510"/><circle cx="510" cy="232" r="4"/></g>
+            <g data-section="publications"><path d="M830 410H725L620 239H566"/><circle cx="566" cy="239" r="4"/></g>
+            <g data-section="research"><path d="M270 480H350L465 298H525"/><circle cx="525" cy="298" r="4"/></g>
           </svg>
-          <figcaption>Initial observations reveal patterns before they become obvious.</figcaption>
-        </figure>
-      </section>
-
-      <section id="research" class="research shell" aria-labelledby="research-title">
-        <div class="section-heading reveal"><span>(01)</span><h2 id="research-title">Research practice</h2><i></i></div>
-        <div class="research-lead reveal">
-          <p>I use research as a way of making the invisible <em>legible</em>—connecting evidence, context, and human experience.</p>
-          <div><p>This is a home for current questions, working methods, and investigations in progress. Each project begins with attention: to the data, to the people affected, and to what has not yet been asked.</p><a class="arrow-link" href="#contact">Discuss a collaboration <span>↗</span></a></div>
+          <nav class="anatomy-labels" aria-label="Organ section navigation">
+            <a class="anatomy-label label-brain" href="#research-techniques" data-section="research-techniques"><span class="organ-number">05 / THE BRAIN</span><strong>Research Techniques</strong><span class="organ-hint">The how behind the work</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+            <a class="anatomy-label label-eye" href="#ai-tools" data-section="ai-tools"><span class="organ-number">03 / THE EYE</span><strong>AI Tools &amp; Skills</strong><span class="organ-hint">New tools. New possibilities.</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+            <a class="anatomy-label label-lungs" href="#tutoring-notes" data-section="tutoring-notes"><span class="organ-number">04 / THE LUNGS</span><strong>Tutoring &amp; Notes</strong><span class="organ-hint">Space to learn and grow</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+            <a class="anatomy-label label-heart" href="#publications" data-section="publications"><span class="organ-number">02 / THE HEART</span><strong>Publications</strong><span class="organ-hint">Ideas shared with the world</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+            <a class="anatomy-label label-liver" href="#research" data-section="research"><span class="organ-number">01 / THE LIVER</span><strong>Research</strong><span class="organ-hint">Questions worth exploring</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+            <a class="anatomy-label label-ear" href="#contact" data-section="contact"><span class="organ-number">06 / THE EAR</span><strong>Contact</strong><span class="organ-hint">A conversation starts here</span><span class="label-arrow" aria-hidden="true">↗</span></a>
+          </nav>
+          <div class="plate-note" aria-hidden="true"><span>ONE ATLAS.<br />MANY CONNECTIONS.</span><i>Follow what interests you.</i></div>
         </div>
-        <div class="inquiry-grid">
-          <article class="inquiry reveal"><p class="inquiry-number">A / 01</p><span class="inquiry-mark">↗</span><h3>Questions<br />worth following</h3><p>Framing complex problems with clarity, curiosity, and a bias toward useful insight.</p></article>
-          <article class="inquiry reveal"><p class="inquiry-number">B / 02</p><span class="inquiry-mark">◌</span><h3>Evidence,<br />in context</h3><p>Combining quantitative signals with qualitative observation to see the whole picture.</p></article>
-          <article class="inquiry reveal"><p class="inquiry-number">C / 03</p><span class="inquiry-mark">∿</span><h3>Ideas into<br />action</h3><p>Translating findings into tools, stories, and decisions that can make a difference.</p></article>
-        </div>
-      </section>
-
-      <section id="publications" class="publications" aria-labelledby="publications-title">
-        <div class="shell">
-          <div class="section-heading reveal"><span>(02)</span><h2 id="publications-title">Selected writing</h2><i></i></div>
-          <div class="publication-list">
-            <a class="publication reveal" href="#contact"><span class="pub-index">01</span><div><p class="pub-type">Research paper · 2026</p><h3>How do we notice the systems we live within?</h3></div><span class="pub-arrow">↗</span></a>
-            <a class="publication reveal" href="#contact"><span class="pub-index">02</span><div><p class="pub-type">Essay · 2025</p><h3>Notes on attention, uncertainty, and better questions</h3></div><span class="pub-arrow">↗</span></a>
-            <a class="publication reveal" href="#contact"><span class="pub-index">03</span><div><p class="pub-type">Research brief · 2025</p><h3>From scattered observations to shared understanding</h3></div><span class="pub-arrow">↗</span></a>
+        <figcaption id="figure-caption"><span><i aria-hidden="true"></i> SELECT AN ORGAN OR ITS LABEL</span><span>ILLUSTRATIVE ANATOMY / SIX CONNECTED SECTIONS</span></figcaption>
+      </figure>
+    </section>
+    <div class="atlas-divider shell"><span>Independent parts. Connected ideas.</span><span>EXPLORE THE FIELD INDEX <b aria-hidden="true">↓</b></span></div>
+    <section id="field-index" class="field-index shell" aria-label="Research sections">
+      <div class="index-header"><span class="eyebrow">THE FIELD INDEX</span><a class="return-link" href="#atlas">Back to main menu <span aria-hidden="true">↑</span></a></div>
+      <nav class="section-nav" aria-label="Research section navigation">
+        <a href="#research" data-section="research"><span>01</span> Research <b aria-hidden="true">↗</b></a>
+        <a href="#publications" data-section="publications"><span>02</span> Publications <b aria-hidden="true">↗</b></a>
+        <a href="#ai-tools" data-section="ai-tools"><span>03</span> AI Tools &amp; Skills <b aria-hidden="true">↗</b></a>
+        <a href="#tutoring-notes" data-section="tutoring-notes"><span>04</span> Tutoring &amp; Notes <b aria-hidden="true">↗</b></a>
+        <a href="#research-techniques" data-section="research-techniques"><span>05</span> Research Techniques <b aria-hidden="true">↗</b></a>
+        <a href="#contact" data-section="contact"><span>06</span> Contact <b aria-hidden="true">↗</b></a>
+      </nav>
+      <div class="content-deck">
+        <!-- RESEARCH: add project cards inside this section's panel-body. -->
+        <section id="research" class="content-panel" data-organ="liver" aria-labelledby="research-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">01 / THE LIVER · A CLOSER LOOK</span><h2 id="research-title" tabindex="-1">Research</h2><p class="section-lead">A closer look at the questions, projects, and findings behind my work. Current investigations, completed projects, and the ideas that connect them.</p></header>
+          <!-- EDIT THE TEXT AROUND THE LIVER: replace the two study-note blocks with your own detailed writing. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / QUESTIONS</span><h3>Start with<br /><em>a question.</em></h3><p>A place to introduce the problem, its background, and the aim of a project.</p><span class="study-rule"></span><span class="study-tags">CONTEXT / PURPOSE / CURIOSITY</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/liver-detail.png" alt="Illustrated liver cutaway with branching vessels and a magnified lobular structure." width="1024" height="1024" loading="lazy" /><figcaption><span>THE LIVER / STRUCTURES WITHIN</span><span>ILLUSTRATIVE STUDY 01</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / EVIDENCE</span><h3>Build<br /><em>the story.</em></h3><p>Add experimental results, figures, and the observations that connect them.</p><span class="study-rule"></span><span class="study-tags">PROJECTS / FINDINGS / NEXT STEPS</span></div>
           </div>
-          <p class="publication-note reveal">Replace these sample titles with your papers, articles, preprints, or talks.</p>
-        </div>
-      </section>
-
-      <section id="notes" class="notes shell" aria-labelledby="notes-title">
-        <div class="section-heading reveal"><span>(03)</span><h2 id="notes-title">From the notebook</h2><i></i></div>
-        <div class="note-layout">
-          <article class="featured-note reveal">
-            <div class="notebook-art" aria-hidden="true"><span class="paper-title">FIELD NOTE<br /><b>NO. 018</b></span><span class="circle-grid"></span><span class="annotation one">observe</span><span class="annotation two">revise</span><span class="small-rule"></span></div>
-            <p class="pub-type">Working note · 08.16.2026</p><h3>On treating the unanswered question as a productive place to begin.</h3><a class="arrow-link" href="#contact">Read the note <span>→</span></a>
-          </article>
-          <div class="notes-list">
-            <a class="mini-note reveal" href="#contact"><span>07.22.2026</span><p>The value of the small sample</p><b>→</b></a>
-            <a class="mini-note reveal" href="#contact"><span>06.03.2026</span><p>Learning to map uncertainty</p><b>→</b></a>
-            <a class="mini-note reveal" href="#contact"><span>05.14.2026</span><p>What a careful conclusion looks like</p><b>→</b></a>
-            <a class="mini-note reveal" href="#contact"><span>04.28.2026</span><p>In defence of a slower question</p><b>→</b></a>
+          <div class="section-library-heading"><span class="eyebrow">THE RESEARCH FILES</span><h3>Projects &amp; findings</h3><p>A growing record of the work.</p></div>
+          <div class="panel-body resource-list">
+            <article class="resource-card"><span class="eyebrow">PROJECTS &amp; FINDINGS</span><h3>Research in focus.</h3><p>Research projects will appear here, with an overview, key findings, and links to related work.</p><span class="content-tag">PROJECTS COMING SOON</span></article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" class="contact" aria-labelledby="contact-title"><div class="shell contact-inner"><p class="contact-kicker reveal">Open to thoughtful exchanges</p><h2 id="contact-title" class="reveal">A good conversation<br />can be a <em>starting point.</em></h2><a class="contact-link reveal" href="mailto:jiahao.wei@mail.mcgill.ca">jiahao.wei@mail.mcgill.ca <span>↗</span></a><p class="contact-help reveal">Email.</p></div></section>
-    </main>
-    <footer class="site-footer shell"><span>© <span id="year"></span> Darien Wei</span><span>Built with care &amp; curiosity</span><a href="#top">Return to top ↑</a></footer>
-    <script src="script.js"></script>
-  </body>
+        <!-- PUBLICATIONS: add paper titles, authors, and DOI or PDF links here. -->
+        <section id="publications" class="content-panel" data-organ="heart" aria-labelledby="publications-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">02 / THE HEART · A VIEW WITHIN</span><h2 id="publications-title" tabindex="-1">Publications</h2><p class="section-lead">The heart of the atlas: a home for papers, preprints, and research outputs, with the evidence and ideas behind them.</p></header>
+          <!-- EDIT THE TEXT AROUND THE HEART: paper summaries and research context can go here. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / THE STORY</span><h3>Ideas,<br /><em>opened up.</em></h3><p>A space for paper summaries: the question, the approach, and the main finding.</p><span class="study-rule"></span><span class="study-tags">QUESTIONS / METHODS / INSIGHT</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/heart-detail.png" alt="Detailed anatomical heart cutaway revealing its chambers, valves, and internal muscular walls." width="1024" height="1024" loading="lazy" /><figcaption><span>THE HEART / CHAMBERS &amp; CONNECTIONS</span><span>ILLUSTRATIVE STUDY 02</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / THE RECORD</span><h3>Follow<br /><em>the evidence.</em></h3><p>Keep author lists, journal details, DOI links, and PDFs together with the work they describe.</p><span class="study-rule"></span><span class="study-tags">PAPERS / PREPRINTS / OPEN QUESTIONS</span></div>
+          </div>
+          <div class="section-library-heading"><span class="eyebrow">THE PUBLICATION RECORD</span><h3>Papers &amp; preprints</h3><p>The evidence behind the ideas.</p></div>
+          <div class="panel-body empty-record"><div class="paper-drawing" aria-hidden="true"><span>RESEARCH / DW</span><i></i><i></i><i></i><b>∿</b></div><p class="eyebrow">PUBLICATION RECORD</p><h3>A space for what comes next.</h3><p>Publications haven’t been added to this atlas yet. Paper titles, authors, and links will appear here.</p><a href="#research-techniques" data-section="research-techniques" class="inline-link">Explore research techniques <span aria-hidden="true">↗</span></a></div>
+        </section>
+
+        <!-- AI TOOLS & SKILLS: add tool cards, workflow guides, and reusable skills here. -->
+        <section id="ai-tools" class="content-panel" data-organ="eye" aria-labelledby="ai-tools-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">03 / THE EYE · ANOTHER PERSPECTIVE</span><h2 id="ai-tools-title" tabindex="-1">AI Tools <em>&amp; Skills</em></h2><p class="section-lead">A collection of tools, workflows, and reusable skills that support research, learning, and everyday work.</p></header>
+          <!-- EDIT THE TEXT AROUND THE EYE: introduce your tools, workflows, and examples. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / EXPLORATION</span><h3>See another<br /><em>possibility.</em></h3><p>A place for tools, prompts, and practical experiments with AI.</p><span class="study-rule"></span><span class="study-tags">TOOLS / PROMPTS / EXPERIMENTS</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/eye-detail.png" alt="Illustrated eye cross-section showing the iris, lens, layered retina, and optic nerve." width="1024" height="1024" loading="lazy" /><figcaption><span>THE EYE / LAYERS OF PERCEPTION</span><span>ILLUSTRATIVE STUDY 03</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / PRACTICE</span><h3>Make it<br /><em>useful.</em></h3><p>Add reusable skills and workflows, with examples and step-by-step instructions.</p><span class="study-rule"></span><span class="study-tags">WORKFLOWS / EXAMPLES / REUSABLE SKILLS</span></div>
+          </div>
+          <div class="section-library-heading"><span class="eyebrow">THE TOOLBOX</span><h3>Tools, skills &amp; workflows</h3><p>Practical things to try and use again.</p></div>
+          <div class="panel-body resource-list">
+            <article class="resource-card"><span class="eyebrow">01 / TOOLS &amp; WORKFLOWS</span><h3>A practical AI toolkit.</h3><p>Tool guides, example workflows, and links will be collected here.</p><span class="content-tag">TOOLS COMING SOON</span></article>
+            <article class="resource-card"><span class="eyebrow">02 / REUSABLE SKILLS</span><h3>Useful steps, ready to repeat.</h3><p>A space for skills, prompt templates, and step-by-step guides, with instructions and downloadable resources.</p><span class="content-tag">SKILLS COMING SOON</span></article>
+          </div>
+        </section>
+
+        <!-- TUTORING & NOTES: add teaching resources before the notebook entries. -->
+        <section id="tutoring-notes" class="content-panel" data-organ="lungs" aria-labelledby="tutoring-notes-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">04 / THE LUNGS · ROOM TO LEARN</span><h2 id="tutoring-notes-title" tabindex="-1">Tutoring <em>&amp; Notes</em></h2><p class="section-lead">A place for teaching materials, study guides, worked examples, and observations from the research notebook.</p></header>
+          <!-- EDIT THE TEXT AROUND THE LUNGS: add teaching topics, lesson introductions, or notes. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / UNDERSTANDING</span><h3>Make room<br /><em>to understand.</em></h3><p>Introduce the subjects, concepts, and questions behind each lesson.</p><span class="study-rule"></span><span class="study-tags">CONCEPTS / QUESTIONS / EXPLANATIONS</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/lungs-detail.png" alt="Detailed lungs with branching airways and a magnified cluster of alveoli." width="1024" height="1024" loading="lazy" /><figcaption><span>THE LUNGS / A BRANCHING WORLD</span><span>ILLUSTRATIVE STUDY 04</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / CONNECTIONS</span><h3>Let learning<br /><em>take shape.</em></h3><p>A space for explanations, worked examples, and notes to return to.</p><span class="study-rule"></span><span class="study-tags">LESSONS / STUDY GUIDES / NOTEBOOKS</span></div>
+          </div>
+          <div class="section-library-heading"><span class="eyebrow">THE LEARNING NOTEBOOK</span><h3>Lessons &amp; observations</h3><p>Illustrative notebook entries below.</p></div>
+          <div class="panel-body notebook-list">
+            <article class="resource-card tutoring-card"><span class="eyebrow">TUTORING RESOURCES</span><h3>Make the next step clearer.</h3><p>Subjects, lesson materials, and learning resources will be added here.</p><span class="content-tag">TUTORING RESOURCES COMING SOON</span></article>
+            <h3 class="notebook-heading">From the notebook</h3>
+            <details open><summary><span>NOTE 001</span><h3>The question before the experiment</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>Before choosing a technique, write the question in one sentence. What would count as evidence? What result would make you change your mind?</p><p>A well-framed question makes the next step smaller, clearer, and easier to test.</p></div></details>
+            <details><summary><span>NOTE 002</span><h3>Keep the unexpected observation</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>An observation that does not fit the pattern can be a measurement problem, an overlooked condition, or the beginning of another question.</p><p>Record it with its context before deciding what it means. A good notebook preserves uncertainty as well as conclusions.</p></div></details>
+            <details><summary><span>NOTE 003</span><h3>Make the process visible</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>Keep the reasoning alongside the result: what changed, why a method was chosen, and where its limits lie.</p><p>Clear records make it easier to revisit an idea, share it, and build on it.</p></div></details>
+          </div>
+        </section>
+        <!-- RESEARCH TECHNIQUES: replace these examples with your protocols and methods. -->
+        <section id="research-techniques" class="content-panel" data-organ="brain" aria-labelledby="research-techniques-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">05 / THE BRAIN · WHERE IDEAS CONNECT</span><h2 id="research-techniques-title" tabindex="-1">Research <em>Techniques</em></h2><p class="section-lead">Methods give curiosity a structure. From designing an experiment to interpreting a signal, this is the space for the tools behind the work.</p></header>
+          <!-- EDIT THE TEXT AROUND THE BRAIN: describe techniques, protocols, and analysis. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / THE APPROACH</span><h3>From idea<br /><em>to method.</em></h3><p>Describe why a technique was chosen and what it helps reveal.</p><span class="study-rule"></span><span class="study-tags">DESIGN / OBSERVATION / MEASUREMENT</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/brain-detail.png" alt="Violet brain illustration opening into a magnified network of neurons and softly glowing synaptic connections." width="1024" height="1024" loading="lazy" /><figcaption><span>THE BRAIN / SIGNALS &amp; CONNECTIONS</span><span>ILLUSTRATIVE STUDY 05</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / THE PROCESS</span><h3>Make it<br /><em>reproducible.</em></h3><p>Keep protocols, materials, analysis steps, and practical notes here.</p><span class="study-rule"></span><span class="study-tags">PROTOCOLS / ANALYSIS / REPRODUCIBILITY</span></div>
+          </div>
+          <div class="section-library-heading"><span class="eyebrow">THE RESEARCH TOOLKIT</span><h3>Methods &amp; protocols</h3><p>Illustrative methods, ready to be replaced with your own.</p></div>
+          <div class="panel-body method-list">
+            <details open><summary><span>01</span><h3>Experimental design</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>A clear question, a testable hypothesis, and a plan that makes the result interpretable.</p><ul><li>Define the outcome and variables before collecting data.</li><li>Use appropriate controls and document sources of variation.</li><li>Record decisions so another researcher can follow the experiment.</li></ul><span class="method-tags">HYPOTHESES / CONTROLS / REPRODUCIBILITY</span></div></details>
+            <details><summary><span>02</span><h3>Observation &amp; measurement</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>Careful measurement connects a research question to evidence. A method should make clear what is being observed and what it cannot capture.</p><ul><li>Choose measurements that address the question.</li><li>Check calibration, consistency, and potential bias.</li><li>Keep observations alongside the conditions in which they were made.</li></ul><span class="method-tags">OBSERVATION / QUALITY / DOCUMENTATION</span></div></details>
+            <details><summary><span>03</span><h3>Analysis &amp; interpretation</h3><b aria-hidden="true"></b></summary><div class="detail-copy"><p>Turn observations into an explanation while making uncertainty visible.</p><ul><li>Inspect data quality before choosing an analysis.</li><li>State the assumptions behind a model or comparison.</li><li>Report uncertainty and distinguish association from causation.</li></ul><span class="method-tags">DATA / UNCERTAINTY / VISUALIZATION</span></div></details>
+          </div>
+        </section>
+        <!-- CONTACT: replace the coming-soon text with your email and profile links. -->
+        <section id="contact" class="content-panel" data-organ="ear" aria-labelledby="contact-title">
+          <header class="panel-intro"><span class="eyebrow organ-kicker">06 / THE EAR · A PLACE TO LISTEN</span><h2 id="contact-title" tabindex="-1">Contact</h2><p class="section-lead">A place to reach out about research, exchange a question, or begin a conversation.</p></header>
+          <!-- EDIT THE TEXT AROUND THE EAR: introduce collaboration interests and ways to connect. -->
+          <div class="organ-study">
+            <div class="study-note"><span class="eyebrow">01 / CONVERSATION</span><h3>Good ideas<br /><em>start here.</em></h3><p>Research questions, shared interests, and ideas for working together.</p><span class="study-rule"></span><span class="study-tags">QUESTIONS / COLLABORATION / EXCHANGE</span></div>
+            <figure class="organ-detail-art"><div class="image-orbit" aria-hidden="true"></div><img src="assets/sections/ear-detail.png" alt="Detailed ear cross-section from the outer ear and canal to the spiral cochlea and inner ear." width="1024" height="1024" loading="lazy" /><figcaption><span>THE EAR / THE ART OF LISTENING</span><span>ILLUSTRATIVE STUDY 06</span></figcaption></figure>
+            <div class="study-note"><span class="eyebrow">02 / CONNECTION</span><h3>Find<br /><em>me here.</em></h3><p>Email and professional profile links can be added here when you're ready.</p><span class="study-rule"></span><span class="study-tags">EMAIL / PROFILES / SHARED INTERESTS</span></div>
+          </div>
+          <div class="section-library-heading"><span class="eyebrow">STAY IN TOUCH</span><h3>Let’s connect</h3><p>Space for the next conversation.</p></div>
+          <div class="panel-body contact-record"><span class="contact-mark" aria-hidden="true">↗</span><p class="eyebrow">DARIEN WEI / CONTACT</p><h3>Let’s compare notes.</h3><p>Contact details will be added here soon.</p><div class="contact-rule"></div><p class="contact-footnote">Until then, take a look around the atlas.</p><a class="inline-link" href="#atlas">Return to the collection <span aria-hidden="true">↑</span></a></div>
+        </section>
+      </div>
+      <noscript><p class="noscript-note">All sections are shown below the atlas. Use the organ labels or navigation links to jump between them.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer shell"><a href="#atlas">Darien Wei <span>© <span id="year">2026</span></span></a><p>Always a work in progress. Always curious.</p><span>END OF PLATE / 01</span></footer>
+</body>
 </html>
