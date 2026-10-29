@@ -1,4 +1,3 @@
-
 (() => {
   const panels = [...document.querySelectorAll('.content-panel')];
   const sections = panels.map(panel => panel.id);
