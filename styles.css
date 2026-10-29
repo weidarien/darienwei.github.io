@@ -19,6 +19,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font: 14px/1.7 va
 .content-panel[data-organ="liver"] { --paper: #f5eddc; --ink: #4c3821; --muted: #7c684e; --accent: #9b5728; --rule: #dbc9a6; --soft: #ebddc2; --halo: #d8b77f; }
 .content-panel[data-organ="eye"] { --paper: #e7f1f7; --ink: #203d53; --muted: #526e80; --accent: #246c98; --rule: #bbd0dd; --soft: #d5e6f0; --halo: #9fc6df; }
 .content-panel[data-organ="ear"] { --paper: #f7f1d9; --ink: #463e22; --muted: #796e46; --accent: #886821; --rule: #d9cf9f; --soft: #eee5c4; --halo: #dfcb7b; }
+.content-panel[data-organ="muscle"] { --paper: #f8ede4; --ink: #4b3028; --muted: #7c5c50; --accent: #a25237; --rule: #dec4b3; --soft: #f0dfd1; --halo: #dba68a; }
 .js-enabled body[data-view="section"] .atlas,
 .js-enabled body[data-view="section"] .atlas-divider { display: none; }
 .js-enabled body[data-view="atlas"] .content-deck { display: none; }
@@ -73,6 +74,8 @@ h1 em { color: var(--accent); font-weight: 400; }
 .hotspot-lungs-right { left: 58%; top: 21%; width: 3.9%; height: 10.7%; }
 .hotspot-heart { left: 48.1%; top: 21%; width: 9.2%; height: 9.2%; }
 .hotspot-liver { left: 40%; top: 30.7%; width: 15.5%; height: 6%; }
+.hotspot-muscle { left: 53.5%; top: 53.5%; width: 10.5%; height: 15%; border-color: #a2523759; background: #b9654124; border-radius: 42% 48% 42% 36%; transform: rotate(4deg); }
+.hotspot-muscle span { opacity: 1; background: #a25237; }
 .anatomy-leaders { position: absolute; inset: 0; width: 100%; height: 100%; fill: var(--paper); stroke: #a0aa98; stroke-width: 1; pointer-events: none; }
 .anatomy-leaders path { fill: none; }
 .anatomy-leaders g { transition: stroke .2s; }
@@ -90,6 +93,7 @@ h1 em { color: var(--accent); font-weight: 400; }
 .label-ear { right: 0; top: 20%; }
 .label-heart { right: 0; top: 37%; }
 .label-liver { left: 0; top: 45%; }
+.label-muscle { right: 0; top: 61%; }
 .plate-note { position: absolute; left: 0; bottom: 8%; display: flex; flex-direction: column; gap: 15px; color: var(--muted); }
 .plate-note span { font: 9px/1.9 var(--mono); letter-spacing: .1em; }
 .plate-note i { font: italic 18px var(--serif); }
@@ -104,7 +108,7 @@ h1 em { color: var(--accent); font-weight: 400; }
 .return-link { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 46px; padding: 12px 20px; border: 1px solid var(--accent); border-radius: 4px; background: var(--accent); color: #fff; font: 700 14px/1.4 var(--sans); transition: background .2s, border-color .2s; }
 .return-link:hover { background: #7d3638; border-color: #7d3638; }
 .return-link span { font-size: 19px; line-height: 1; }
-.section-nav { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.section-nav { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
 .section-nav a { display: flex; align-items: center; gap: 9px; padding: 18px 12px; min-height: 66px; font-size: 11px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); transition: background .2s; }
 
 .section-nav span { font: 9px var(--mono); color: var(--muted); }
@@ -183,7 +187,7 @@ summary b::after { transform: rotate(90deg); } details[open] summary b::after { 
 .site-footer { min-height: 90px; border-top: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .site-footer > a { font: 15px var(--serif); }.site-footer > a > span { margin-left: 14px; font: 9px var(--mono); color: var(--muted); }
 .site-footer > p { font: italic 14px var(--serif); color: var(--muted); }.site-footer > span { font: 8px var(--mono); color: var(--muted); }
-/* Dedicated, editable content areas for the six destinations. */
+/* Dedicated, editable content areas for the seven destinations. */
 .resource-list { display: grid; gap: 18px; align-content: start; }
 .resource-card { padding: 26px 28px; border: 1px solid var(--rule); background: var(--soft); }
 .resource-card > .eyebrow { color: var(--accent); }
@@ -198,6 +202,7 @@ summary b::after { transform: rotate(90deg); } details[open] summary b::after { 
   .shell { width: calc(100% - 56px); }
   .header-nav { max-width: 65%; gap: 0 18px; }
   .section-nav { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .section-nav a:last-child { grid-column: 1 / -1; }
   .anatomy-label strong { font-size: 21px; }
   .organ-hint { font-size: 10px; }
   .panel-intro { gap: 18px 30px; }
@@ -285,3 +290,4 @@ summary b::after { transform: rotate(90deg); } details[open] summary b::after { 
   .js-enabled body[data-view="atlas"] .content-deck { display: block; }
   .organ-detail-art { max-width: 450px; }
 }
+
