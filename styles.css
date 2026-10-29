@@ -290,4 +290,3 @@ summary b::after { transform: rotate(90deg); } details[open] summary b::after { 
   .js-enabled body[data-view="atlas"] .content-deck { display: block; }
   .organ-detail-art { max-width: 450px; }
 }
-
